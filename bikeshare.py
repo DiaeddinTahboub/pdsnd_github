@@ -58,10 +58,10 @@ def get_filters():
             print("Enter a valid day")
         if day == "":
             print("Enter a valid day")
-    if day == "":
-        day = "all"
-    if month == "":
-        month = "all"
+            
+    day = day if day else "all"
+    month = month if month else "all"
+
     return city, month, day
 
 
